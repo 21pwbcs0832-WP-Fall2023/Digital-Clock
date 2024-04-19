@@ -1,22 +1,36 @@
+/* Set a default background color for the body */
+body {
+  background-color: #f0f0f0; /* light gray */
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Choose a readable font */
+}
+
+/* Style the main div */
 .main-div {
-    width: 100%;
-    height: 100vh;
-    display:  flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  button {
-    padding: 15px 20px;
-    background-color: #9b599b;
-    color: white;
-    border: 2px solid #ecf0ec;
-    border-radius: 5px;
-    text-transform: uppercase;
-    outline: none;
-    cursor: pointer;
-  }
-  button:hover{
-   transform: scale(1.1);
-  } 
+  width: 100%;
+  min-height: 100vh; /* Ensure div takes at least full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Add padding for better spacing */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Style the button */
+button {
+  padding: 15px 20px;
+  background-color: #9b599b;
+  color: white;
+  border: 2px solid #ecf0ec;
+  border-radius: 5px;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+/* Hover effect for button */
+button:hover {
+  transform: scale(1.1);
+}
